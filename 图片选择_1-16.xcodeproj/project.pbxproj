@@ -16,6 +16,10 @@
 		7E8CB0751C49F672007AA56E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8CB0731C49F672007AA56E /* LaunchScreen.storyboard */; };
 		7E8CB0801C49F672007AA56E /* _____1_16Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8CB07F1C49F672007AA56E /* _____1_16Tests.m */; };
 		7E8CB08B1C49F672007AA56E /* _____1_16UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8CB08A1C49F672007AA56E /* _____1_16UITests.m */; };
+		7E8CB0A01C49F686007AA56E /* CellProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8CB09A1C49F686007AA56E /* CellProperty.m */; };
+		7E8CB0A11C49F686007AA56E /* ZHImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8CB09C1C49F686007AA56E /* ZHImageCell.m */; };
+		7E8CB0A21C49F686007AA56E /* ZHImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8CB09D1C49F686007AA56E /* ZHImageCell.xib */; };
+		7E8CB0A31C49F686007AA56E /* ZHImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8CB09F1C49F686007AA56E /* ZHImageCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		7E8CB0861C49F672007AA56E /* 图片选择_1-16UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "图片选择_1-16UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E8CB08A1C49F672007AA56E /* _____1_16UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____1_16UITests.m"; sourceTree = "<group>"; };
 		7E8CB08C1C49F672007AA56E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E8CB0991C49F686007AA56E /* CellProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellProperty.h; sourceTree = "<group>"; };
+		7E8CB09A1C49F686007AA56E /* CellProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellProperty.m; sourceTree = "<group>"; };
+		7E8CB09B1C49F686007AA56E /* ZHImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHImageCell.h; sourceTree = "<group>"; };
+		7E8CB09C1C49F686007AA56E /* ZHImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHImageCell.m; sourceTree = "<group>"; };
+		7E8CB09D1C49F686007AA56E /* ZHImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZHImageCell.xib; sourceTree = "<group>"; };
+		7E8CB09E1C49F686007AA56E /* ZHImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHImageCollectionViewController.h; sourceTree = "<group>"; };
+		7E8CB09F1C49F686007AA56E /* ZHImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHImageCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +114,7 @@
 		7E8CB0611C49F672007AA56E /* 图片选择_1-16 */ = {
 			isa = PBXGroup;
 			children = (
+				7E8CB0981C49F686007AA56E /* ZHImagePicker */,
 				7E8CB0651C49F672007AA56E /* AppDelegate.h */,
 				7E8CB0661C49F672007AA56E /* AppDelegate.m */,
 				7E8CB0681C49F672007AA56E /* ViewController.h */,
@@ -141,6 +153,20 @@
 				7E8CB08C1C49F672007AA56E /* Info.plist */,
 			);
 			path = "图片选择_1-16UITests";
+			sourceTree = "<group>";
+		};
+		7E8CB0981C49F686007AA56E /* ZHImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				7E8CB0991C49F686007AA56E /* CellProperty.h */,
+				7E8CB09A1C49F686007AA56E /* CellProperty.m */,
+				7E8CB09B1C49F686007AA56E /* ZHImageCell.h */,
+				7E8CB09C1C49F686007AA56E /* ZHImageCell.m */,
+				7E8CB09D1C49F686007AA56E /* ZHImageCell.xib */,
+				7E8CB09E1C49F686007AA56E /* ZHImageCollectionViewController.h */,
+				7E8CB09F1C49F686007AA56E /* ZHImageCollectionViewController.m */,
+			);
+			path = ZHImagePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E8CB0751C49F672007AA56E /* LaunchScreen.storyboard in Resources */,
+				7E8CB0A21C49F686007AA56E /* ZHImageCell.xib in Resources */,
 				7E8CB0721C49F672007AA56E /* Assets.xcassets in Resources */,
 				7E8CB06D1C49F672007AA56E /* Main.storyboard in Resources */,
 			);
@@ -276,7 +303,10 @@
 				7E8CB0701C49F672007AA56E /* _____1_16.xcdatamodeld in Sources */,
 				7E8CB06A1C49F672007AA56E /* ViewController.m in Sources */,
 				7E8CB0671C49F672007AA56E /* AppDelegate.m in Sources */,
+				7E8CB0A01C49F686007AA56E /* CellProperty.m in Sources */,
+				7E8CB0A31C49F686007AA56E /* ZHImageCollectionViewController.m in Sources */,
 				7E8CB0641C49F672007AA56E /* main.m in Sources */,
+				7E8CB0A11C49F686007AA56E /* ZHImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "图片选择_1-16/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhangheng.-----1-16";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "图片选择_1-16/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhangheng.-----1-16";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,6 +532,7 @@
 				7E8CB0911C49F672007AA56E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E8CB0921C49F672007AA56E /* Build configuration list for PBXNativeTarget "图片选择_1-16Tests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +541,7 @@
 				7E8CB0941C49F672007AA56E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E8CB0951C49F672007AA56E /* Build configuration list for PBXNativeTarget "图片选择_1-16UITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +550,7 @@
 				7E8CB0971C49F672007AA56E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,16 +7,34 @@
 //
 
 #import "ViewController.h"
+#import "ZHImageCollectionViewController.h"
 
-@interface ViewController ()
+
+@interface ViewController ()<ZHImageVcDelegate>
+
+@property (strong, nonatomic) NSArray * image;
+@property (weak, nonatomic) IBOutlet UIImageView *photo;
+
 
 @end
 
 @implementation ViewController
 
+- (void)imagePicker:(NSArray *)images{
+    _image = images;
+    _photo.image = [images lastObject];
+}
+
+
+- (IBAction)chouseImage:(id)sender {
+
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+   
 }
 
 - (void)didReceiveMemoryWarning {
