@@ -203,8 +203,6 @@ static NSString * const reuseIdentifier = @"Cell";
         [self imageDidLoad];
     }else{
         //获取高清图片
-#warning 有线程死锁的 情况需要既解决 ： 当快速选完照片返回 然后又快速点击Button 进入这个页面的时候  有一定的几率会发生死锁
-        
         for(int i = 0; i < _selectedAssets.count; i++){
             PHAsset *asset = [_selectedAssets objectAtIndex:i];
             [self.imageManager requestImageForAsset:asset targetSize:PHImageManagerMaximumSize contentMode:PHImageContentModeAspectFit options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
@@ -295,7 +293,6 @@ static NSString * const reuseIdentifier = @"Cell";
    
     
 }
-
 
 
 #pragma mark - PHPhotoLibraryChangeObserver
